@@ -10,4 +10,4 @@
   
 **CS_Discovey**: One more method to detect Cobalt Strike Team Server.  
 
-      :rocket: Updates and news on brother's git: https://github.com/eremit4/cs-discovery :rocket:
+   :rocket: Updates and news on brother's git: https://github.com/eremit4/cs-discovery :rocket:
