@@ -26,7 +26,7 @@ print("Username:", result["username"])
 
 logout_bot = input("Do you want to logOut of this bot? (yes/no) ")
 
-if logout_bot == "yes":
+if logout_bot.lower() == "yes":
     urlogout = f"https://api.telegram.org/bot{telegram_bot_token}/logOut"
     reslogout = requests.get(urlogout).json()
     print(reslogout)
