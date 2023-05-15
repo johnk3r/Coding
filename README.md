@@ -11,3 +11,7 @@
 **VT_Discovery**: Collects indicators from Live Hunting notifications (VirusTotal).  
   
   :neckbeard: Improvements coming soon.
+
+**HUNT_Simulation**: :)  
+  
+  :neckbeard: Improvements coming soon.
