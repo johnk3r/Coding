@@ -18,6 +18,8 @@ show_menu(){
            "High - Collection via Automated Collection"
            "High -$fggreen Persistance via External Remote Services"
 	   "High - Request to DNS CanaryToken"
+	   "High -$fggreen Command & Control GuardDuty"
+	   "Critical - Resource Hiajack via Bitcoin wallet"
            )
 
     edir='../bin/'
@@ -32,6 +34,8 @@ show_menu(){
            "Collection_via_Automated_Collection.sh"
            "Persistence_via_External_Remote_Services.sh"
            "Command_Control_via_DNS_CanaryToken.sh"
+	   "Command_Control_GuardDuty.sh"
+           "Impact_Resource_Hijacking_BitCoin_Wallet.sh"
            )
 
     numitems=${#mitems[@]}
