@@ -11,7 +11,7 @@ controlc()
 trap controlc 2
 
 # Get available tests
-flist=($(cd ./bin && ls -1 *.sh))
+flist=($(cd ../bin && ls -1 *.sh))
 length=${#flist[@]}
 
 # Set interval randomization limits
@@ -34,7 +34,7 @@ while true; do
   sleep $timeout
   testtorun=$(($RANDOM%$length))
   sh -c echo CS_testcontainer
-  ./bin/${flist[$testtorun]}
+  ../bin/${flist[$testtorun]}
   timeout=$(($(($RANDOM%$difftime))+mintime))
   echo "Sleeping $timeout seconds"
 done
