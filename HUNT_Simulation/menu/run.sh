@@ -20,6 +20,7 @@ show_menu(){
 	   "High - Request to DNS CanaryToken"
 	   "High -$fggreen Command & Control GuardDuty"
 	   "Critical - Resource Hiajack via Bitcoin wallet"
+	   "High - Exfiltration Over Alternative Protocol GuardDuty"
            )
 
     edir='../bin/'
@@ -36,6 +37,7 @@ show_menu(){
            "Command_Control_via_DNS_CanaryToken.sh"
 	   "Command_Control_GuardDuty.sh"
            "Impact_Resource_Hijacking_BitCoin_Wallet.sh"
+	   "Exfiltration_via_Exfiltration_GuardDuty.sh"
            )
 
     numitems=${#mitems[@]}
