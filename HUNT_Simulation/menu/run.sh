@@ -16,13 +16,8 @@ show_menu(){
            "High - Exfiltration Over Alternative Protocol"
            "High -$fggreen Command & Control via Remote Access Tools"
            "High - Collection via Automated Collection"
-           "High - Credential Access via Credential Dumping"
            "High -$fggreen Persistance via External Remote Services"
-           "High -Webserver Suspicious Terminal Spawn"
-           "High -Webserver Unexpected Child of Web Service"
-           "High -$fggreen Webserver Bash Reverse Shell"
-           "Medium - Webserver Trigger Metasploit Payload"
-           "High - (inert) Reverse TCP Trojan"
+	   "High - Request to DNS CanaryToken"
            )
 
     edir='../bin/'
@@ -35,13 +30,8 @@ show_menu(){
            "Exfiltration_via_Exfiltration_Over_Alternative_Protocol.sh > /dev/null 2>&1"
            "Command_Control_via_Remote_Access.sh"
            "Collection_via_Automated_Collection.sh"
-           "Credential_Access_via_Credential_Dumping.sh"
            "Persistence_via_External_Remote_Services.sh"
-           "Webserver_Suspicious_Terminal_Spawn.sh"
-           "Webserver_Unexpected_Child_of_Web_Service.sh"
-           "Webserver_Bash_Reverse_Shell.sh"
-           "metasploit/Webserver_Trigger_Metasploit_Payload.sh"
-           "Reverse_Shell_Trojan.sh"
+           "Command_Control_via_DNS_CanaryToken.sh"
            )
 
     numitems=${#mitems[@]}
@@ -49,20 +39,13 @@ show_menu(){
     printf "${fgred}V${version}${normal}\n"
 
 
-echo " ██████ ███████ ██ ██████  ████████                                                                        ";
-echo "██      ██      ██ ██   ██    ██                                                                           ";
-echo "██      ███████ ██ ██████     ██                                                                           ";
-echo "██           ██ ██ ██   ██    ██                                                                           ";
-echo " ██████ ███████ ██ ██   ██    ██                                                                           ";
-echo "                                                                                                           ";
-echo "                                                                                                           ";
 echo "██████  ███████ ████████ ███████  ██████ ████████ ██  ██████  ███    ██ ████████  ██████   ██████  ██      ";
 echo "██   ██ ██         ██    ██      ██         ██    ██ ██    ██ ████   ██    ██    ██    ██ ██    ██ ██      ";
 echo "██   ██ █████      ██    █████   ██         ██    ██ ██    ██ ██ ██  ██    ██    ██    ██ ██    ██ ██      ";
 echo "██   ██ ██         ██    ██      ██         ██    ██ ██    ██ ██  ██ ██    ██    ██    ██ ██    ██ ██      ";
 echo "██████  ███████    ██    ███████  ██████    ██    ██  ██████  ██   ████    ██     ██████   ██████  ███████ ";
 echo "                                                                                                           ";
-echo "                                                                                                           ";
+echo "by CSIRT/UCI                                                                                                           ";
 
 
     printf "\n${menu}     Select one of the following TTPs${normal}\n"
@@ -76,7 +59,7 @@ echo "                                                                          
 
     printf "\n"
     printf "${menu}**${number} a)${menu} Automatically run random scripts${normal}\n"
-    printf "${menu}**${number} o)${menu} Generate Overwatch test detection${normal}\n"
+    printf "${menu}**${number} o)${menu} Generate Severity test detection${normal}\n"
     printf "\n"
     printf "${menu}**${number} e)${menu} Exit to Container shell${normal}\n"
     printf "${menu}**${number} x)${menu} Exit Container${normal}\n"
@@ -128,7 +111,7 @@ do
 
                 o)
                     clear;
-                    option_picked "This menu will create a Falcon Overwatch test detection";
+                    option_picked "This menu will create a Severity test detection";
                     ../menu/ow;
                     clear;
                     show_menu;
