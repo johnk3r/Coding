@@ -12,6 +12,6 @@
   
   :neckbeard: Improvements coming soon.
 
-**HUNT_Simulation**: :)  
+**HUNT_Simulation**: A fork of CrowdStrike to generate telemetry in Unix/AWS environment.  
   
   :neckbeard: Improvements coming soon.
