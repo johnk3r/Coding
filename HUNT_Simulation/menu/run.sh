@@ -21,6 +21,7 @@ show_menu(){
 	   "High -$fggreen Command & Control GuardDuty"
 	   "Critical - Resource Hiajack via Bitcoin wallet"
 	   "High - Exfiltration Over Alternative Protocol GuardDuty"
+	   "Low - Download EICAR files"
            )
 
     edir='../bin/'
@@ -38,6 +39,7 @@ show_menu(){
 	   "Command_Control_GuardDuty.sh"
            "Impact_Resource_Hijacking_BitCoin_Wallet.sh"
 	   "Exfiltration_via_Exfiltration_GuardDuty.sh"
+	   "Execution_UserExecution_MaliciousFile_EICAR.sh"
            )
 
     numitems=${#mitems[@]}
