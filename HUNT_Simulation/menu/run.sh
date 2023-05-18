@@ -22,6 +22,7 @@ show_menu(){
 	   "Critical - Resource Hiajack via Bitcoin wallet"
 	   "High - Exfiltration Over Alternative Protocol GuardDuty"
 	   "Low - Download EICAR files"
+	   "Low - Generating EICAR files"
            )
 
     edir='../bin/'
@@ -40,6 +41,7 @@ show_menu(){
            "Impact_Resource_Hijacking_BitCoin_Wallet.sh"
 	   "Exfiltration_via_Exfiltration_GuardDuty.sh"
 	   "Execution_UserExecution_MaliciousFile_EICAR.sh"
+	   "Execution_UserExecution_Generated_EICAR.sh"
            )
 
     numitems=${#mitems[@]}
