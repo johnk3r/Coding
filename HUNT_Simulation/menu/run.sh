@@ -23,6 +23,7 @@ show_menu(){
 	   "High -$fggreen Exfiltration Over Alternative Protocol GuardDuty [AWS]"
 	   "Low -$fggreen Download EICAR files [AWS]"
 	   "Low -$fggreen Generating EICAR files [AWS]"
+	   "High -$fggreen Request to Onion node [AWS]"
            )
 
     edir='../bin/'
@@ -42,6 +43,7 @@ show_menu(){
 	   "Exfiltration_via_Exfiltration_GuardDuty.sh"
 	   "Execution_UserExecution_MaliciousFile_EICAR.sh"
 	   "Execution_UserExecution_Generated_EICAR.sh"
+	   "Command_Control_Onion.sh"
            )
 
     numitems=${#mitems[@]}
