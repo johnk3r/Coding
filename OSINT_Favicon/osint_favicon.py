@@ -5,7 +5,7 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Solicitar a URL do usuário
-url = input("Digite a URL do ícone de favoritos: ")
+url = input("Digite a URL do icon ("hxxp://x/favicon.ico"): ")
 
 # Fazer a solicitação GET
 response = requests.get(url)
