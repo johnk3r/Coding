@@ -1,5 +1,6 @@
 import requests
 import re
+import time
 from bs4 import BeautifulSoup
 
 def get_vpn_provider(ip):
@@ -27,6 +28,8 @@ def main():
             print('IP:', ip, '- Provider:', result)
         else:
             print('IP:', ip, '- Não foi possível determinar o provedor.')
+
+        time.sleep(5)  # Atraso de 5 segundos
 
 if __name__ == "__main__":
     main()
