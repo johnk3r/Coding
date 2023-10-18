@@ -1,4 +1,4 @@
-# Coding :: A noob thinking he can code :)  
+# Code from a noob
 
 **BOT_Discovery**: LogOut of malicious bots found in malware and checkers (Telegram).  
   
