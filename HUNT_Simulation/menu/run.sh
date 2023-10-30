@@ -24,6 +24,12 @@ show_menu(){
 	   "Low -$fggreen Download EICAR files [AWS]"
 	   "Low -$fggreen Generating EICAR files [AWS]"
 	   "High -$fggreen Request to Onion node [AWS]"
+	   "High -$fggreen Exfiltration using Bash shell [Linux]"
+	   "High -$fggreen Exfiltration using Cancel command [Linux]"
+	   "High -$fggreen Exfiltration using Busybox command [Linux]"
+	   "High -$fggreen Exfiltration using Whois command [Linux]"
+	   "High -$fggreen Exfiltration using Wget command [Linux]"
+	   "High -$fggreen Exifiltration using Curl command [Linux]"
            )
 
     edir='../bin/'
@@ -44,6 +50,12 @@ show_menu(){
 	   "Execution_UserExecution_MaliciousFile_EICAR.sh"
 	   "Execution_UserExecution_Generated_EICAR.sh"
 	   "Command_Control_Onion.sh"
+	   "Exfiltration_via_bash.sh"
+	   "Exfiltration_via_cancel.sh"
+	   "Exfiltration_via_busybox.sh"
+	   "Exfiltration_via_whois.sh"
+	   "Exfiltration_via_wget.sh"
+	   "Exfiltration_via_curl.sh"
            )
 
     numitems=${#mitems[@]}
