@@ -1,5 +1,5 @@
 import ctypes
-
+# NtResumeThread
 # Carregar a biblioteca de rede do Windows
 iphlpapi = ctypes.WinDLL('iphlpapi.dll')
 
